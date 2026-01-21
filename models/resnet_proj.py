@@ -1,3 +1,10 @@
+"""
+Author: Dr. Jin Zhang
+E-mail: j.zhang@kust.edu.cn
+URL: https://github.com/jinzhangkust
+Dept: Kunming University of Science and Technology (KUST)
+"""
+
 from functools import partial
 from typing import Any, Callable, List, Optional, Type, Union
 
@@ -322,5 +329,6 @@ def resnet50(*, weights: bool = None, progress: bool = True, **kwargs: Any) -> R
         :members:
     """
     return _resnet(Bottleneck, [3, 4, 6, 3], weights, progress, **kwargs)
+
 
 
